@@ -34,9 +34,18 @@ header{
   }
   .categoria-video{
     display: flex;
-    overflow-x: auto;
-    gap: 15px;
+    overflow-x: auto;    /* permite rolagem horizontal */
+    gap: 15px;           /* espaço entre videos  */
+    padding: 20px;
+    scroll-behavior: smooth;  /* rolagem suave */    
   }
+  .categoria-video::-webkit-scrollbar{
+    height: 8px;
+  }
+  .categoria-video::-webkit-scrollbar-thumb{
+   background-color: rgb(21,189, 35);
+   border-radius: 4px;
+}
   .categoria{
     padding-left: 20px;
     padding-right: 20px;
